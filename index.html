@@ -1,63 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Weather App</title>
-    <meta charset="UTF-8" />
-    <link href="src/styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-        <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container text-center w-100 d-flex justify-content-center">
-      <div class="card">
-        <div class="card-body">
-          <div class="city">
-            <form class="search-form" id="search-form">
-              <input
-                class="search"
-                type="search"
-                placeholder="🔍 Enter a city..."
-                id="city-input"
-                autocomplete="off"
-              />
-              <input
-              type="submit"
-              value="Search"
-              class="button"
-              id="search-input"
-            />
-      <button id="current-location-button" >
-Current
-      </button>
-            </form>
-            <br />
-          </div>
-          <div class="col">
-            <div class="featuredcity">
-              <h2 id="city"></h2>
-              <p id="date"></p>
-              <p id="description"></p>
-              <div class="row">
-                <div class="col-5">
-                  <ul>
-                    <li>Humidity: <span id="humidity"></span>%</li>
-                    <li>Wind: <span id="wind"></span> km/h</li>
-                  </ul>
-                </div>
-                <div class="col-7">
-                 <img src="" alt="Clear" id="icon"/> <h1 class="temperature" id="temperature">°C</h1>
+
+<head>
+  <title>Weather App</title>
+  <meta charset="UTF-8" />
+  <link href="src/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container text-center w-100 d-flex justify-content-center">
+    <div class="card">
+      <div class="card-body">
+        <div class="city">
+          <form class="search-form" id="search-form">
+            <input class="search" type="search" placeholder="🔍 Enter a city..." id="city-input" autocomplete="off" />
+            <input type="submit" value="Search" class="button" id="search-input" />
+            <button id="current-location-button">
+              Current
+            </button>
+          </form>
+          <br />
+        </div>
+        <div class="col">
+          <div class="featuredcity">
+            <h2 id="city"></h2>
+            <p id="date"></p>
+            <p id="description"></p>
+            <div class="row">
+              <div class="col-5">
+                <ul>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> km/h</li>
+                </ul>
+              </div>
+              <div class="col-7">
+                <img src="" alt="Clear" id="icon" />
+                <a href="" id="fahrenheit-link">
+                <h1 class="temperature">
+                  <span id="temperature"></span>
+<span class="symbol"></span>
+                </h1>
+                </a>
               </div>
             </div>
             <hr />
@@ -67,9 +59,11 @@ Current
                 <div class="col weekday">18 <br />🌤 <br />-7°</div>
                 <div class="col weekday">20 <br />🌥 <br />-8°</div>
                 <div class="col weekday">22 <br />☁️ <br />-8°</div>
-                 <small> This project was coded by <a href="https://www.shecodes.io/graduates/64692-sharah-gallego" target="blank"> Sharah Gallego </a> and is a 
-<a href="https://github.com/sharahgallego/vanilla-weather-app" target="blank"> open-source code </a> on GitHub
-</small>
+                <small> This project was coded by <a href="https://www.shecodes.io/graduates/64692-sharah-gallego"
+                    target="blank"> Sharah Gallego </a> and is a
+                  <a href="https://github.com/sharahgallego/vanilla-weather-app" target="blank"> open-source code </a>
+                  on GitHub
+                </small>
               </div>
             </div>
           </div>
@@ -77,5 +71,6 @@ Current
       </div>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
