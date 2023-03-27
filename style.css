@@ -7,7 +7,7 @@ body {
   margin-left: 25px;
 }
 .card {
-  width: 45rem;
+  width: 40rem;
   margin-top: 40px;
   border-radius: 40px;
 }
@@ -45,15 +45,16 @@ h2 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 100px;
   margin-top: -50px;
   margin-bottom: -10px;
 }
 .weekday {
-  border: 2.5px solid #93badc;
-  margin: 0px 10px;
+  border: 3px solid #93badc;
   border-radius: 10px;
-  padding: 30px 0px;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
 }
 .temperature {
   font-size: 60px;
@@ -94,4 +95,7 @@ a {
   margin-bottom: -100px;
   margin-right: 200px;
   margin-top: -200px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
